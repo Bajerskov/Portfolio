@@ -1,0 +1,72 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark-color: #635bff;
+    --light-color: #80e9ff;
+  }
+  
+body {
+  height:100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.svg-item {
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.footer-link{
+  display:inline-block;
+}
+
+.footer-link:after { 
+  display:block;
+  content: '';
+  border-bottom: solid 3px white;
+  transform: scaleX(0);
+  transition: transform 150ms ease-in-out;
+}
+
+.footer-link:hover:after {
+  transform: scaleX(1);
+}
+
+.hero-link{
+  display:inline-block;
+}
+
+.hero-link:after { 
+  display:block;
+  content: '';
+  border-bottom: solid 3px black;
+  transform: scaleX(0);
+  transition: transform 150ms ease-in-out;
+}
+
+.hero-link:hover:after {
+  transform: scaleX(1);
+}
+
+.progress-bar {
+  transition: width 0.3s;
+}
+
+.btn-cta {
+  @apply inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700;
+}
+
+.btn-passive {
+  @apply inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50;
+}
+
+.container-space {
+  @apply px-3 sm:px-11 md:px-24 lg:px-36 xl:px-44;
+}
+

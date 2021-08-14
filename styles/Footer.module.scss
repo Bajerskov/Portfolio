@@ -1,0 +1,66 @@
+#mask {
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+.svg-size {
+    width:50vw;
+}
+
+.stop-color {
+    stop-color: crimson;
+    animation: colors 30s linear infinite;
+    
+    &--2 {
+        animation-delay: -1s;
+    }
+    &--3 {
+        animation-delay: -.5s;
+    }
+    &--4 {
+        animation-delay: -2s;
+    }
+    &--5 {
+        animation-delay: -2.5s;
+    }
+    &--6 {
+        animation-delay: -1.5s;
+    }
+}
+
+@keyframes colors {
+    0% {
+        stop-color: maroon;
+    }
+    10% {
+        stop-color: crimson;
+    }
+    20% {
+        stop-color: orangered;
+    }
+    30% {
+        stop-color: gold;
+    }
+    40% {
+        stop-color: yellowgreen;
+    }
+    50% {
+        stop-color: skyblue;
+    }
+    60% {
+        stop-color: steelblue;
+    }
+    70% {
+        stop-color: slateblue;
+    }
+    80% {
+        stop-color: darkviolet;
+    }
+    90% {
+        stop-color: purple;
+    }
+        100% {
+        stop-color: maroon;
+    }
+}
