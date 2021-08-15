@@ -29,5 +29,5 @@ jobs:
       with:
         file: Dockerfile
         push: true
-        tags: bajerskov/portfolio:latest
+        tags: bajerskov/portfolio-nextjs:latest
     
