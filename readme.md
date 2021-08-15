@@ -1,9 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+My [portfolio](https://andersfejerskov.dk) is created with [Next.js](https://nextjs.org/) a React framework for static, SEO friendly websites, utilizing the react library.
 
-## This is my portfolio repository 
-My [portfolio](https://andersfejerskov.dk) is created with [Next.js](https://nextjs.org/) a React framework for static, SEO friendly websites.
-
-The project is dockerized and implements a ci/cd workflow by building the project to an image and pushing to a docker-hub registry. Which a DigitalOcean droplet picks-up and replaces the running containers with one from the new image.
+The project has a fully automatic ci/cd workflow by using github actions to build and compile Docker images and pushing them to the docker-hub registry. The image is then picked up by a [Watchtower](https://github.com/containrrr/watchtower) container running on a DigitalOcean droplet and replaces the old container with one from the new image. 
 
 ## Dependencies
 The project utilises [TailwindCSS](https://tailwindcss.com/) for basic styling in combination with PreProcessor [PostCSS](https://postcss.org/) and [Sass](https://sass-lang.com/)
@@ -18,7 +15,7 @@ Other styling dependencies are
 This portfolio relies on an API built with laravel and a dashboard for creating content for the site. 
 
 ## ToDO
-* Automatic testing
+* Automatic testing (unit, integration and e2e)
 * Metric tracking
 * SEO optimization
 * Higher quality images.
