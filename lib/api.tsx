@@ -13,7 +13,7 @@ type apiErrorMessage = {
   message:string;
 }
 
-const fallBackAPI = "https://anderslf.dk/api/";
+const fallBackAPI = "https://api.anderslf.dk/api/";
 
 //if no env file was specified with an API_URL use fallback.
 function getAPIURL() {

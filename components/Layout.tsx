@@ -5,6 +5,7 @@ import Footer from './Footer'
 import ToTop from './ToTop'
 import { BrowserView } from 'react-device-detect'
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
+import Script from 'next/script'
 
  const Layout: React.FunctionComponent = props => { 
     const { scrollYProgress} = useViewportScroll()
@@ -20,7 +21,7 @@ import { motion, useViewportScroll, useTransform } from 'framer-motion'
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0" />
             <meta name="theme-color" content="#ffffff" />
             <title>Anders Fejerskov Portfolio</title>
-            <script id="" src="./hotjar.js" type="text/javascript"></script>
+            <Script src="./hotjar.js" type="text/javascript"></Script>
         </Head>
         
         {/* Navbar */}
